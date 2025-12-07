@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { SparklesIcon } from './icons';
 
@@ -24,8 +23,8 @@ const LoadingStep: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center text-center h-full animate-fade-in">
         <div className="relative flex items-center justify-center">
-            <div className="absolute h-24 w-24 bg-purple-500 rounded-full opacity-20 animate-ping"></div>
-            <SparklesIcon className="w-16 h-16 text-purple-400 animate-pulse" />
+            <div className="absolute h-24 w-24 bg-orange-500 rounded-full opacity-20 animate-ping"></div>
+            <SparklesIcon className="w-16 h-16 text-orange-400 animate-pulse" />
         </div>
       <h2 className="mt-8 text-2xl font-bold text-slate-200">
         A IA está criando seu produto...

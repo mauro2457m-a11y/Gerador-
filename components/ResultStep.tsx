@@ -1,4 +1,3 @@
-
 import React, { useCallback } from 'react';
 import { jsPDF } from 'jspdf';
 import { type DigitalProduct } from '../types';
@@ -57,11 +56,11 @@ const ResultStep: React.FC<ResultStepProps> = ({ product, onStartOver }) => {
             <img 
               src={product.coverImageUrl} 
               alt="Capa do Produto Digital" 
-              className="w-full rounded-lg shadow-2xl shadow-purple-900/40 aspect-[3/4] object-cover"
+              className="w-full rounded-lg shadow-2xl shadow-orange-900/40 aspect-[3/4] object-cover"
             />
           </div>
           <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
-             <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">{product.title}</h2>
+             <h2 className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">{product.title}</h2>
             <p className="text-slate-400 mt-2">{product.description}</p>
             <div className="mt-4 text-3xl font-extrabold text-green-400">{product.price}</div>
           </div>
@@ -87,7 +86,7 @@ const ResultStep: React.FC<ResultStepProps> = ({ product, onStartOver }) => {
         <div className="lg:col-span-3">
           <div className="bg-slate-800/50 p-6 sm:p-8 rounded-xl border border-slate-700 h-full">
             <div className="flex items-center gap-3 mb-4">
-              <BookOpenIcon className="w-6 h-6 text-indigo-400" />
+              <BookOpenIcon className="w-6 h-6 text-orange-400" />
               <h3 className="text-xl font-bold text-slate-200">Conteúdo do Produto</h3>
             </div>
             <div className="prose prose-invert prose-p:text-slate-300 prose-headings:text-slate-100 prose-strong:text-slate-100 max-w-none h-[calc(100vh-20rem)] min-h-[400px] overflow-y-auto pr-2">

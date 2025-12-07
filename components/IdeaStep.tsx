@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { SparklesIcon } from './icons';
 
@@ -22,7 +21,7 @@ const IdeaStep: React.FC<IdeaStepProps> = ({ topic, setTopic, audience, setAudie
   return (
     <div className="w-full max-w-2xl mx-auto animate-fade-in">
       <div className="text-center mb-10">
-        <h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-indigo-500">
+        <h1 className="text-4xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-500">
           Produto Digital de 5 Minutos
         </h1>
         <p className="mt-4 text-lg text-slate-400">
@@ -42,7 +41,7 @@ const IdeaStep: React.FC<IdeaStepProps> = ({ topic, setTopic, audience, setAudie
               value={topic}
               onChange={(e) => setTopic(e.target.value)}
               placeholder="Ex: Guia de produtividade para freelancers"
-              className="w-full bg-slate-700/50 border border-slate-600 rounded-md px-4 py-3 text-white placeholder-slate-500 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-300"
+              className="w-full bg-slate-700/50 border border-slate-600 rounded-md px-4 py-3 text-white placeholder-slate-500 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
             />
           </div>
           <div>
@@ -55,7 +54,7 @@ const IdeaStep: React.FC<IdeaStepProps> = ({ topic, setTopic, audience, setAudie
               value={audience}
               onChange={(e) => setAudience(e.target.value)}
               placeholder="Ex: Desenvolvedores que trabalham de casa"
-              className="w-full bg-slate-700/50 border border-slate-600 rounded-md px-4 py-3 text-white placeholder-slate-500 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-all duration-300"
+              className="w-full bg-slate-700/50 border border-slate-600 rounded-md px-4 py-3 text-white placeholder-slate-500 focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
             />
           </div>
         </div>
@@ -68,7 +67,7 @@ const IdeaStep: React.FC<IdeaStepProps> = ({ topic, setTopic, audience, setAudie
           <button
             onClick={handleGenerateClick}
             disabled={!topic || !audience || isLoading}
-            className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+            className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-red-600 hover:from-orange-600 hover:to-red-700 text-white font-bold py-3 px-6 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
           >
             {isLoading ? (
                 <>
